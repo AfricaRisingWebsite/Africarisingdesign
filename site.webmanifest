@@ -1,10 +1,13 @@
 {
   "name": "Africa Rising Investments",
   "short_name": "Africa Rising",
-  "description": "Africa-focused investment strategy and advisory.",
-  "start_url": "./",
+  "description": "The Investment Partner for Africa's Future",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#F4F1E8",
+  "background_color": "#082820",
   "theme_color": "#082820",
-  "icons": []
+  "icons": [
+    { "src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
 }

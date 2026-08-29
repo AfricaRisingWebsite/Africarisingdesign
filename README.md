@@ -1,67 +1,117 @@
-# Africa Rising Investments website prototype
+# Africa Rising Investments — website prototype (v2)
 
-A lightweight, responsive one-page prototype built with semantic HTML, modern CSS and minimal JavaScript. It is ready for static hosting and contains no database, framework, API keys or form-processing dependency.
+A static, multi-page website for Africa Rising Investments. No framework, no build step,
+no database, no API keys. Every file in this folder is deployable as-is.
 
-## Preview
+**Status: prototype for client review. Not for public release.** See
+`CONTENT-VERIFICATION.md` for the list of facts still awaiting confirmation and
+`LAUNCH-CHECKLIST.md` for the switches to flip before going live.
 
-Open `index.html` directly for a quick preview, or serve the folder through any simple local web server. Serving the folder is recommended because it matches production hosting more closely.
+---
 
-## Included
+## Preview it locally
 
-- Original SVG brand mark and wordmark
-- Optimised WebP hero artwork
-- Responsive desktop, tablet and mobile layouts
-- Keyboard-accessible mobile navigation
-- Reduced-motion support and visible focus states
-- Six primary service cards
-- Robert Bwire leadership section with an honest portrait placeholder
-- Selected-experience timeline with client-verification flags
-- Sector perspective and proposed editorial topics
-- Downloadable historical investment library containing the three supplied PDFs
-- Professional advertising section
-- Contact and social links with unverified details withheld
-- Content verification checklist
+The site uses directory-style URLs (`/expertise/`), so it needs a local web server —
+opening `index.html` straight from the file system will break the internal links.
 
-## Publication status
+```bash
+cd africa-rising-investments
+python3 -m http.server 8080
+# then open http://localhost:8080
+```
 
-This is a review prototype, not an approved public website. `robots` is set to `noindex, nofollow`. Remove that restriction only after content approval, the final domain is known and the canonical/metadata values have been updated.
+Any static server works (`npx serve`, `php -S localhost:8080`, VS Code Live Server).
 
-## GitHub Pages preview
+---
 
-This package is prepared for the public repository:
+## What is here
 
-`https://github.com/AfricaRisingWebsite/Africarisingdesign`
+```
+africa-rising-investments/
+├── index.html                     Home
+├── expertise/index.html           All eight services, grouped by the four lenses
+├── expertise/rapporteur/          Rapporteur & conference services
+├── about/index.html               Robert Bwire, method, selected experience
+├── insights/index.html            Article index + proposed editorial topics
+├── insights/eac-guidebooks-what-still-holds/   Seed article
+├── library/index.html             Annotated investment library + EAC reference
+├── partner/index.html             Sponsorship & institutional notices
+├── contact/index.html             Routed enquiries + disabled form preview
+├── privacy/index.html             Draft privacy notice (Kenya DPA 2019 aware)
+├── 404.html                       Not-found page (uses root-absolute paths)
+├── robots.txt                     Currently blocks all indexing — see launch checklist
+├── sitemap.xml                    Placeholder domain — update before launch
+├── site.webmanifest
+├── .nojekyll                      Stops GitHub Pages running Jekyll
+├── .gitignore
+└── assets/
+    ├── css/styles.css             Design system (tokens, components, motion)
+    ├── css/fonts.css              Self-hosted @font-face declarations
+    ├── js/site.js                 ~100 lines, progressive enhancement only
+    ├── fonts/                     Manrope + DM Sans woff2 (SIL OFL)
+    ├── logo/                      SVG logo family
+    ├── img/                       OG share image + app icons
+    └── publications/              The three EAC PDFs
+```
 
-Upload the **contents of this folder** to the root of the repository so that `index.html` is visible on the repository's first screen. Do not upload the parent `africa-rising-prototype` folder as a single nested folder.
+## Design system at a glance
 
-After the files are committed:
+| Token | Value | Use |
+|---|---|---|
+| `--forest` | `#123C32` | Primary brand green, buttons, dark bands |
+| `--forest-deep` | `#082820` | Hero, footer, deepest ground |
+| `--ivory` / `--ivory-warm` | `#F4F1E8` / `#FAF8F2` | Section grounds |
+| `--gold` | `#C4A35A` | Accent only. **Never body text on light** (2.1:1) |
+| `--gold-ink` | `#7F6326` | The gold-toned text colour that passes AA (5.0:1 on ivory) |
+| `--charcoal` | `#16211D` | Body text (14.7:1 on ivory) |
+| `--slate` | `#4E5C56` | Secondary text (6.2:1 on ivory) |
+| `--sage` | `#B7C9C1` | Secondary text on dark (7.1:1 on forest) |
 
-1. Open the repository's **Settings** tab.
-2. Select **Pages** under **Code and automation**.
-3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-4. Select branch **main**, folder **/(root)**, then choose **Save**.
-5. Wait for GitHub to report that the site is live.
+Type: Manrope (headings) / DM Sans (body), self-hosted, with full system fallback stacks.
+Fluid `clamp()` scale, 68ch measure, 17px minimum body size.
 
-The shareable review address will be:
+**Gold rule:** gold is used for rules, indices, focus rings, small marks and headline
+emphasis on dark grounds only. It never carries body copy on a light background.
 
-`https://africarisingwebsite.github.io/Africarisingdesign/`
+## Verified quality gates
 
-The preview remains marked `noindex, nofollow`, and `robots.txt` blocks crawling. This keeps it suitable for client review without inviting search-engine indexing. Remove both safeguards only after final approval.
+Run against Chromium at 1440×900, 1280×720, 1024×768, 768×1024, 390×844 and 375×667
+(66 page/viewport combinations):
 
-## Cloudflare Pages (future option)
+- Zero horizontal overflow
+- Zero console errors, zero failed requests, zero broken internal links (33 targets)
+- Zero axe-core violations (WCAG 2.0/2.1/2.2 A + AA + best practice) across all 11 pages
+- Exactly one `<h1>` per page, no heading-level skips
+- Every tab stop has a visible focus ring
+- Full content and working navigation with JavaScript disabled
+- `prefers-reduced-motion` honoured — no element is hidden behind an animation
+- Homepage transfer ≈ 152 KB including self-hosted fonts
 
-For a future Git-connected Cloudflare deployment:
+## Technical notes
 
-- Production branch: `main`
-- Build command: none
-- Output directory: repository root (if this folder becomes the repository root)
+- **No third-party requests.** Fonts are self-hosted, there is no analytics, no cookies,
+  no tracking and nothing stored in the browser. This matters for government and DFI
+  visitors on restricted networks, and it is what makes the privacy notice truthful.
+- **JavaScript is optional.** `site.js` adds the scrolled header state, the mobile menu,
+  section reveals and the footer year. Without it a `<noscript>` block turns the mobile
+  nav into a plain list and all content renders immediately.
+- **The 404 page uses root-absolute paths** because it can be served from any URL depth.
+  Every other page uses relative paths, so the site also works from a subdirectory.
+- **The review banner** is the gold strip at the top of every page. It lives in
+  `lib`-generated markup as an `<aside class="review-bar">` inside `<header>`; delete
+  that one line per page at launch.
 
-Do not connect `africa.or.ke`, alter nameservers or modify existing DNS until the current website and all DNS/email records have been backed up, the client has approved this prototype, and a rollback plan exists.
+## Licences
 
-## GitHub packaging
+Manrope and DM Sans are used under the SIL Open Font License; licence texts are in
+`assets/fonts/`. The three PDFs in `assets/publications/` are publications of the East
+African Community and the African Development Bank and are included as reference material.
+Africa Rising Investments is not their author and claims no contribution to them.
 
-Before pushing, confirm that only public website assets are present. Do not include credentials, private correspondence, the browser installer from the parent folder, temporary render files or unapproved source material beyond the intended downloadable publications.
+## A note on the PDF sizes
 
-## Finalisation
-
-Complete every item in `CONTENT-VERIFICATION.md`, replace the portrait placeholder, confirm the two uncertain publication dates, add the approved privacy policy, change robots indexing and generate `robots.txt` and `sitemap.xml` once the production domain is final.
+The three publications are shipped unaltered — they are third-party official documents and
+re-compressing them would change what the client is redistributing. Two are large (9.3 MB
+and 7.4 MB), so the file size is printed next to every download button and announced to
+screen readers. If bandwidth becomes a concern, the honest options are to host them
+externally or to link to the publishers' own copies rather than to silently degrade them.

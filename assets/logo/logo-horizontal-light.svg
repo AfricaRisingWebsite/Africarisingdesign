@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 72" role="img" aria-labelledby="t d">
+  <title id="t">Africa Rising Investments</title>
+  <desc id="d">An ascending wedge crossed by a rising gold trajectory, beside the company name.</desc>
+  <g transform="translate(4 4) scale(1.0)">
+    <path fill="#F4F1E8" d="M32 5 55 57H44.4L32 27.5 19.6 57H9Z"/>
+    <path fill="#C4A35A" d="M16 44 54 38.5 58 41.6 54 44.7 16 50.5Z"/>
+  </g>
+  <text x="82" y="35" fill="#FFFFFF" font-family="Manrope, 'Segoe UI', Arial, sans-serif" font-size="25" font-weight="800" letter-spacing="0.6">AFRICA RISING</text>
+  <text x="83" y="55" fill="#B7C9C1" font-family="'DM Sans', 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="4.9">INVESTMENTS</text>
+</svg>
