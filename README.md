@@ -1,11 +1,12 @@
-# Africa Rising Investments — website prototype (v2)
+# Africa Rising Investments website
 
 A static, multi-page website for Africa Rising Investments. No framework, no build step,
 no database, no API keys. Every file in this folder is deployable as-is.
 
-**Status: prototype for client review. Not for public release.** See
-`CONTENT-VERIFICATION.md` for the list of facts still awaiting confirmation and
-`LAUNCH-CHECKLIST.md` for the switches to flip before going live.
+**Status: live production site.**
+<https://africarisingwebsite.github.io/Africarisingdesign/>
+
+See `LAUNCH-CHECKLIST.md` for release checks and optional future enhancements.
 
 ---
 
@@ -32,15 +33,15 @@ africa-rising-investments/
 ├── expertise/index.html           All eight services, grouped by the four lenses
 ├── expertise/rapporteur/          Rapporteur & conference services
 ├── about/index.html               Robert Bwire, method, selected experience
-├── insights/index.html            Article index + proposed editorial topics
+├── insights/index.html            Published article index
 ├── insights/eac-guidebooks-what-still-holds/   Seed article
 ├── library/index.html             Annotated investment library + EAC reference
 ├── partner/index.html             Sponsorship & institutional notices
-├── contact/index.html             Routed enquiries + disabled form preview
-├── privacy/index.html             Draft privacy notice (Kenya DPA 2019 aware)
+├── contact/index.html             Routed email enquiries + contact brief guide
+├── privacy/index.html             Privacy notice (Kenya DPA 2019 aware)
 ├── 404.html                       Not-found page (uses root-absolute paths)
-├── robots.txt                     Currently blocks all indexing — see launch checklist
-├── sitemap.xml                    Placeholder domain — update before launch
+├── robots.txt                     Allows crawling and identifies the sitemap
+├── sitemap.xml                    Live GitHub Pages URLs
 ├── site.webmanifest
 ├── .nojekyll                      Stops GitHub Pages running Jekyll
 ├── .gitignore
@@ -51,7 +52,7 @@ africa-rising-investments/
     ├── fonts/                     Manrope + DM Sans woff2 (SIL OFL)
     ├── logo/                      SVG logo family
     ├── img/                       OG share image + app icons
-    └── publications/              The three EAC PDFs
+    └── publications/              Three EAC references + capability statement
 ```
 
 ## Design system at a glance

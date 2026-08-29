@@ -90,7 +90,7 @@ def footer(c, page):
     c.line(18 * mm, 15 * mm, W - 18 * mm, 15 * mm)
     c.setFont("DMSans", 7)
     c.setFillColor(MUTED)
-    c.drawString(18 * mm, 10.5 * mm, "Africa Rising Investments · Client review edition · 29 August 2026")
+    c.drawString(18 * mm, 10.5 * mm, "Africa Rising Investments · Capability statement · 29 August 2026")
     c.drawRightString(W - 18 * mm, 10.5 * mm, str(page))
 
 
@@ -224,9 +224,9 @@ def page_two(c, body, small, h2, card_head):
 
     label(c, "Selected experience", 18 * mm, 113 * mm, FOREST)
     experiences = [
-        ("COMESA Regional Investment Agency", "Rapporteur for the National Investment Promotion Agencies Annual Meeting, Nairobi, 22–23 March 2022."),
-        ("Renaissance Development Advisors / DFID BERF", "Consulting services connected to investment-climate reform programmes, described conservatively pending final client approval."),
-        ("East African investment information", "An engagement connected to updating regional investment information or publications; project title, dates and scope remain to be confirmed."),
+        ("COMESA Regional Investment Agency", "Rapporteur for the National Investment Promotion Agencies Annual Meeting, Nairobi, 22-23 March 2022."),
+        ("Renaissance Development Advisors / DFID BERF", "Consulting services connected to programmes designed to initiate, improve and scale investment-climate reform."),
+        ("Kenya Investment Authority", "Former Head of Strategy and Research, bringing national investment-promotion experience to commercial advisory work."),
     ]
     y = 104 * mm
     for title, desc in experiences:
@@ -258,7 +258,7 @@ def main():
     card_head = ParagraphStyle("card-head", fontName="ManropeBold", fontSize=9, leading=11, textColor=FOREST)
 
     c = Canvas(str(OUT), pagesize=A4, pageCompression=1)
-    c.setTitle("Africa Rising Investments — Capability Statement")
+    c.setTitle("Africa Rising Investments - Capability Statement")
     c.setAuthor("Africa Rising Investments")
     c.setSubject("Investment advisory capability statement")
     page_one(c, body, small, h2, card_head)

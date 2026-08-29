@@ -30,14 +30,13 @@ cd africa-rising-investments
 git init
 git add .
 git status          # READ THIS LIST before committing
-git commit -m "Africa Rising Investments website prototype"
+git commit -m "Update Africa Rising Investments website"
 git branch -M main
 git remote add origin https://github.com/<account>/africa-rising-investments.git
 git push -u origin main
 ```
 
-Repository name: `africa-rising-investments`. Keep it **private** until the client
-approves publication — the site is flagged `noindex` but a public repository is public.
+Repository name: `Africarisingdesign`. GitHub Pages publishes the `main` branch.
 
 ---
 

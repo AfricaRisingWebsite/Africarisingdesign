@@ -1,10 +1,5 @@
 # Africa Rising Investments
-# PROTOTYPE: this file blocks all indexing. Replace with the block below at launch.
 User-agent: *
-Disallow: /
+Allow: /
 
-# ---- LAUNCH VERSION (delete the two lines above, uncomment these) ----
-# User-agent: *
-# Allow: /
-#
-# Sitemap: https://africarisingwebsite.github.io/Africarisingdesign/sitemap.xml
+Sitemap: https://africarisingwebsite.github.io/Africarisingdesign/sitemap.xml

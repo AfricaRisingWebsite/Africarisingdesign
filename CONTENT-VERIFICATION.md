@@ -18,7 +18,7 @@ Priority order reflects impact on credibility, not effort.
 | 4 | **Robert Bwire's approved biography** | A short profile written from the confirmed facts only | The biography Robert wants published, in his own words. |
 | 5 | **Qualifications and memberships** | Not shown | Degrees, professional certifications and memberships, with awarding bodies. |
 | 6 | **EAC / AfDB engagement** | One cautious sentence, prominently flagged, with no dates or scope | The project title, the contracting party, the dates and a one-paragraph scope. This is potentially the strongest of the three engagements and is currently the vaguest. |
-| 7 | **Privacy notice** | Draft written against the Kenya Data Protection Act, 2019 | Client review and, where appropriate, review by a qualified adviser. Insert the registered entity name, registration number, registered address and named data-protection contact. |
+| 7 | **Privacy notice** | Published against the site&rsquo;s current behaviour and the Kenya Data Protection Act, 2019 | A qualified legal review remains recommended. Add the registered entity name, registration number, registered address and named data-protection contact when available. |
 
 ## Priority 2 — needed for a complete site
 
@@ -40,7 +40,7 @@ Priority order reflects impact on credibility, not effort.
 |---|---|---|---|
 | 17 | **Case studies** | None | Two or three engagements described at outcome level, with client permission. |
 | 18 | **Testimonials** | None | Attributed quotes with permission to publish. |
-| 19 | **Capability statement PDF** | A two-page client-review edition is linked from the homepage and contact page | Confirm the final engagement wording and contact details before using it for procurement or external distribution. |
+| 19 | **Capability statement PDF** | A two-page production edition is linked from the homepage and contact page | Update it whenever public contact details or the selected-experience record changes. |
 | 20 | **Additional articles** | One seed article published; six proposed topics clearly labelled as unwritten | The editorial engine only earns its keep once there are four or five pieces. See `PUBLISHING-GUIDE.md`. |
 | 21 | **Speaking history** | Not shown | Past conferences, panels and moderation, for `/expertise/rapporteur/`. |
 | 22 | **Sector depth** | Six sectors described generically | If the firm has genuine depth in two or three, say which and give each a dedicated page. |
