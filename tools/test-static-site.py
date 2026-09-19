@@ -86,6 +86,13 @@ def main():
         if target is not None and not target.exists():
             failures.append(f"site.webmanifest: missing icon {icon.get('src')}")
 
+    for path in ROOT.rglob("*.pdf"):
+        failures.append(f"Downloadable PDF remains: {path.relative_to(ROOT)}")
+    for page in pages:
+        import re
+        if re.search(r"(?i)\.pdf|\bdownload\s*(?:=|>)", page.read_text()):
+            failures.append(f"Download reference remains: {page.relative_to(ROOT)}")
+
     placeholder = "africa-rising-investments.pages.dev"
     for path in list(ROOT.rglob("*.html")) + list(ROOT.rglob("*.xml")):
         if placeholder in path.read_text(encoding="utf-8"):
