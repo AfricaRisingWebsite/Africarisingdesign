@@ -533,6 +533,26 @@ strong { font-weight: 600; }
 .sector h3 { font-size: var(--step-0); margin: 0; }
 .sector p { font-size: var(--step--1); color: var(--slate); margin: 0; line-height: 1.55; }
 
+/* Sector photographs are decorative; the headings and descriptions carry the meaning. */
+.sectors:has(.sector--photo) { gap: 1rem; border: 0; background: transparent; }
+.sector--photo { position: relative; isolation: isolate; overflow: hidden;
+  min-height: 25rem; padding: clamp(1.5rem, 2.5vw, 2rem); align-content: end;
+  background: var(--forest-deep); color: var(--white); }
+.sector__image { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; }
+.sector--photo::before { content: ""; position: absolute; z-index: -1; inset: 0;
+  background: linear-gradient(180deg, rgba(8,40,32,.12) 0%, rgba(8,40,32,.32) 30%,
+    rgba(8,40,32,.88) 54%, rgba(8,40,32,.98) 100%); }
+.sector__copy { display: grid; gap: .8rem; }
+.sector--photo h3 { color: #fff; font-size: clamp(1.1rem, 1.5vw, 1.3rem); line-height: 1.3; }
+.sector--photo p { color: #f4f1e8; font-size: 1rem; line-height: 1.6; }
+@media (max-width: 39.99em) { .sector--photo { min-height: 23rem; } }
+@media (forced-colors: active) {
+  .sector__image, .sector--photo::before { display: none; }
+  .sector--photo { border: 1px solid CanvasText; }
+  .sector--photo h3, .sector--photo p { color: CanvasText; }
+}
+
 /* ---------- 13. Library ---------- */
 .doc { display: grid; gap: var(--s-4); padding: var(--s-6); background: var(--white);
   border: 1px solid var(--rule); }
