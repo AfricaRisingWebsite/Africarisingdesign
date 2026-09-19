@@ -751,3 +751,10 @@ html.js .reveal.is-visible { opacity: 1; transform: none;
 }
 @media (max-width: 46em) { .table-hint { display: block; } }
 .table-wrap:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+/* Supplied portrait: preserve the complete photograph and avoid excessive enlargement. */
+.portrait--photo { display: block; width: 100%; max-width: 288px; aspect-ratio: auto; padding: 0; margin: 0 auto; background: var(--ivory-warm); color: var(--charcoal); }
+.portrait--photo::before { content: none; }
+.portrait--photo img { display: block; width: 100%; height: auto; }
+.portrait--photo figcaption { padding: 1rem; font-weight: 600; line-height: 1.5; }
+.portrait--photo figcaption span { display: block; font-size: .875rem; font-weight: 400; color: var(--slate); }
