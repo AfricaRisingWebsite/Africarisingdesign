@@ -12,7 +12,7 @@ indexing, and publish the production sitemap.
 - [x] Set canonical, Open Graph and structured-data URLs to the live GitHub Pages domain.
 - [x] Replaced the disabled contact form with working, pre-addressed email routes.
 - [x] Removed unverified telephone and LinkedIn placeholders from public pages.
-- [x] Published the capability statement and verified all PDF downloads.
+- [x] Removed all downloadable PDFs and download buttons at the owner's request.
 - [x] Checked headings, local links, assets, duplicate IDs and deployment URLs across all pages.
 - [x] Tested desktop, phone and landscape layouts without horizontal overflow.
 
@@ -31,6 +31,6 @@ indexing, and publish the production sitemap.
 
 1. Run `python tools/test-static-site.py`.
 2. Open the changed pages at desktop and phone widths.
-3. Test every changed email, download and external link.
+3. Test every changed email and external link.
 4. Confirm `git diff --check` and review the complete staged file list.
 5. After pushing, verify the live URLs and the custom 404 page.

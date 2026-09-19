@@ -52,7 +52,7 @@ africa-rising-investments/
     ├── fonts/                     Manrope + DM Sans woff2 (SIL OFL)
     ├── logo/                      SVG logo family
     ├── img/                       OG share image + app icons
-    └── publications/              Three EAC references + capability statement
+    └── publications/              Removed: no downloadable documents
 ```
 
 ## Design system at a glance
@@ -105,14 +105,9 @@ Run against Chromium at 1440×900, 1280×720, 1024×768, 768×1024, 390×844 and
 ## Licences
 
 Manrope and DM Sans are used under the SIL Open Font License; licence texts are in
-`assets/fonts/`. The three PDFs in `assets/publications/` are publications of the East
-African Community and the African Development Bank and are included as reference material.
+`assets/fonts/`. The library summarises historical publications of the East African Community and the African Development Bank; the PDFs are not hosted.
 Africa Rising Investments is not their author and claims no contribution to them.
 
-## A note on the PDF sizes
+## Download policy
 
-The three publications are shipped unaltered — they are third-party official documents and
-re-compressing them would change what the client is redistributing. Two are large (9.3 MB
-and 7.4 MB), so the file size is printed next to every download button and announced to
-screen readers. If bandwidth becomes a concern, the honest options are to host them
-externally or to link to the publishers' own copies rather than to silently degrade them.
+No downloadable documents are hosted. Publication references remain as on-page summaries.
