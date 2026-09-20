@@ -778,3 +778,22 @@ html.js .reveal.is-visible { opacity: 1; transform: none;
 .portrait--photo img { display: block; width: 100%; height: auto; }
 .portrait--photo figcaption { padding: 1rem; font-weight: 600; line-height: 1.5; }
 .portrait--photo figcaption span { display: block; font-size: .875rem; font-weight: 400; color: var(--slate); }
+
+/* ---------- 29. Weekly brief ---------- */
+.brief { max-width: var(--measure); margin-inline: auto; border-top: 1px solid var(--rule); }
+.brief__entry { padding: var(--s-6) 0; border-bottom: 1px solid var(--rule); }
+.brief__date {
+  font-family: var(--font-display); font-size: var(--step--2); font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-ink);
+  margin: 0 0 var(--s-2);
+}
+.brief__entry h3 { margin: 0 0 var(--s-3); font-size: var(--step-1); }
+.brief__entry p { margin: 0 0 var(--s-3); }
+.brief__entry p:last-child { margin-bottom: 0; }
+.brief__tag {
+  display: inline-block; margin-left: var(--s-3); padding: 0.15em 0.6em;
+  border: 1px solid var(--rule-strong); font-family: var(--font-display);
+  font-size: var(--step--2); font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--slate); vertical-align: 0.15em;
+}
+.brief__empty { padding: var(--s-7) 0; border-bottom: 1px solid var(--rule); color: var(--slate); }

@@ -12,9 +12,9 @@ Priority order reflects impact on credibility, not effort.
 
 | # | Item | Current state on the site | What is needed |
 |---|---|---|---|
-| 1 | **Professional email address** | `africarisinginvestments@gmail.com` is published throughout | A Gmail address on an investment advisory site is the single biggest credibility cost on the page. `africa.or.ke` already exists — move to `robert@africa.or.ke` or `advisory@africa.or.ke` and replace every instance. |
-| 2 | **Telephone number** | Not published. The supplied `+788695599` is incomplete (no valid country code and too few digits). | The full number in international format. A ready-to-enable `tel:` link sits commented out in `contact/index.html`. |
-| 3 | **Robert Bwire's photograph** | Monogram placeholder on the homepage and About page. No stock or generated image used. | An approved professional portrait, ideally 4:5, minimum 1000px on the short edge. |
+| 1 | ~~**Professional email address**~~ RESOLVED 20 Sep 2026 | `africa@africa.or.ke` published throughout | Client confirmed the domain address. All 57 instances of the Gmail address replaced. **Note: an earlier round of this change was never pushed — the live site carried the Gmail address until now.** Still to confirm: that the mailbox is live and monitored. |
+| 2 | ~~**Telephone number**~~ RESOLVED 20 Sep 2026 | `+254 788 695 599` on `/contact/`, in every footer, and in the Organization JSON-LD | Client supplied `+254788695599` in feedback round 1. Still to confirm: that the line is answered during business hours. |
+| 3 | ~~**Robert Bwire’s photograph**~~ RESOLVED | Supplied portrait published on the home page and About page | Client supplied the image. |
 | 4 | **Robert Bwire's approved biography** | A short profile written from the confirmed facts only | The biography Robert wants published, in his own words. |
 | 5 | **Qualifications and memberships** | Not shown | Degrees, professional certifications and memberships, with awarding bodies. |
 | 6 | **EAC / AfDB engagement** | One cautious sentence, prominently flagged, with no dates or scope | The project title, the contracting party, the dates and a one-paragraph scope. This is potentially the strongest of the three engagements and is currently the vaguest. |
@@ -33,6 +33,23 @@ Priority order reflects impact on credibility, not effort.
 | 14 | **Physical / registered address** | "Nairobi, Kenya" only | Whether a fuller address should be published. |
 | 15 | **Advertising criteria and rates** | `/partner/` describes formats and standards. No rates invented. | Rate card, specifications, lead times and approval process. |
 | 16 | **Form handler** | The enquiry form is visibly disabled with an explanation. It does not silently fail. | Choose and configure a handler (Formspree, Cloudflare Workers, Netlify Forms) and enable the form. |
+
+## Round 2 feedback — actioned 20 Sep 2026
+
+| Item | What was asked | What was done |
+|---|---|---|
+| Contact address | Everything to go to `africa@africa.or.ke` | 57 Gmail references replaced across 12 pages, the capability-statement generator and this file. This had been done in an unpushed working copy previously; the live site still carried the Gmail address. |
+| "LEAD CONSULTANT" on the home page | Not in the main page; place it under Robert Bwire at the bottom | The leadership block moved from mid-page (section 5 of 9) to the foot of the home page, after the FAQ and before the closing CTA. The "Lead Consultant" line in the portrait caption was removed, so it now appears exactly once, directly under his name. It remains in the photo `alt` text, which is not visible and is correct for screen readers. Section backgrounds rebalanced so the alternation still reads. |
+| "About Robert Bwire" | Rename to "OUR TEAM" | Footer link renamed on all 12 pages. Section eyebrow on the home page is now "Our team"; the About page breadcrumb reads "Our Team". The header nav item is still "About" — a generic label pointing at the same page. Change it if the client prefers. |
+| Weekly publishing | A place to post weekly updates | New `/updates/` page ("Weekly Brief"). One file, one paste per week, with the template and instructions inline. Linked from the header nav, footer, home page and `/insights/`. Procedure in `WEEKLY-UPDATES.md`. |
+
+### Process note
+
+The local working copy used for this round was 16 commits behind `origin/main`.
+The portrait, the sector photographs, the removal of all downloadable PDFs and a
+full pass of copy polish existed only on the remote. The work was redone on top of
+`origin/main` rather than merged. **Pull before editing.**
+
 
 ## Priority 3 — strengthens the site
 
