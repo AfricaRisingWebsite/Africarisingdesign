@@ -4,7 +4,7 @@ A static, multi-page website for Africa Rising Investments. No framework, no bui
 no database, no API keys. Every file in this folder is deployable as-is.
 
 **Status: live production site.**
-<https://africarisinginvestment.com/>
+<https://africa.or.ke/>
 
 See `LAUNCH-CHECKLIST.md` for release checks and optional future enhancements.
 
