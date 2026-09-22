@@ -46,7 +46,7 @@ Write for a decision-maker considering an African market, policy, institution, o
 
 - Read the finished copy aloud in your head and remove robotic transitions, repeated conclusions, empty abstractions, and unnecessary headings.
 - Confirm every named institution, date, figure, quotation, and legal or policy statement against a primary source.
-- Confirm the canonical URL uses `https://africarisingwebsite.github.io/Africarisingdesign/`.
+- Confirm the canonical URL uses `https://africarisinginvestment.com/`.
 - Open the article locally and test every link.
 - Check desktop and phone layouts for horizontal overflow.
 - Confirm the article card, breadcrumb, metadata, structured data, and sitemap entry agree on the title, URL, and date.

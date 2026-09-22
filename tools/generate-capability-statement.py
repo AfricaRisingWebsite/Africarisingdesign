@@ -245,7 +245,7 @@ def page_two(c, body, small, h2, card_head):
     c.setFont("ManropeBold", 10)
     c.drawString(25 * mm, 32 * mm, "africa@africa.or.ke")
     c.setFont("DMSans", 8)
-    c.drawRightString(184 * mm, 32 * mm, "Nairobi, Kenya  ·  africarisingwebsite.github.io/Africarisingdesign/")
+    c.drawRightString(184 * mm, 32 * mm, "Nairobi, Kenya  ·  africarisinginvestment.com")
     footer(c, 2)
 
 

@@ -1,6 +1,6 @@
 # Production checklist
 
-The website is live at <https://africarisingwebsite.github.io/Africarisingdesign/>.
+The website is live at <https://africarisinginvestment.com/>.
 The public pages have no prototype banner, use launch-ready footers, allow search-engine
 indexing, and publish the production sitemap.
 

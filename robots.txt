@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://africarisingwebsite.github.io/Africarisingdesign/sitemap.xml
+Sitemap: https://africarisinginvestment.com/sitemap.xml

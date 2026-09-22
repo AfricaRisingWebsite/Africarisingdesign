@@ -6,7 +6,7 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES_PREFIX = "/Africarisingdesign/"
+PAGES_PREFIX = "/"
 
 
 class AuditParser(HTMLParser):
