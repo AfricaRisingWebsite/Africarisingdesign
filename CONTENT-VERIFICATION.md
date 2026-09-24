@@ -12,7 +12,7 @@ Priority order reflects impact on credibility, not effort.
 
 | # | Item | Current state on the site | What is needed |
 |---|---|---|---|
-| 1 | ~~**Professional email address**~~ CHANGED 23 Sep 2026 | `africarisinginvestments@gmail.com` published throughout | Client instruction (23 Sep 2026): use the Gmail address. All 59 instances of `africa@africa.or.ke` replaced across 12 pages and the capability-statement generator. The `africa@africa.or.ke` mailbox still exists at WebHost Kenya but is no longer published. |
+| 1 | ~~**Professional email address**~~ RESOLVED 24 Sep 2026 | `info@africarisinginvestment.com` published throughout | Zoho Mail Lite mailbox on the site's own domain, set up 24 Sep 2026 (MX, SPF, DKIM verified; DMARC p=none). Replaced all 59 instances of the interim Gmail address. The old `africa@africa.or.ke` mailbox at WebHost Kenya is no longer published. |
 | 2 | ~~**Telephone number**~~ RESOLVED 20 Sep 2026 | `+254 788 695 599` on `/contact/`, in every footer, and in the Organization JSON-LD | Client supplied `+254788695599` in feedback round 1. Still to confirm: that the line is answered during business hours. |
 | 3 | ~~**Robert Bwire’s photograph**~~ RESOLVED | Supplied portrait published on the home page and About page | Client supplied the image. |
 | 4 | **Robert Bwire's approved biography** | A short profile written from the confirmed facts only | The biography Robert wants published, in his own words. |
@@ -38,7 +38,7 @@ Priority order reflects impact on credibility, not effort.
 
 | Item | What was asked | What was done |
 |---|---|---|
-| Contact address | Everything to go to `africarisinginvestments@gmail.com` | 23 Sep 2026: client reversed the 20 Sep decision; all 59 `africa@africa.or.ke` references replaced with the Gmail address. |
+| Contact address | Everything to go to `info@africarisinginvestment.com` | 24 Sep 2026: company mailbox live on Zoho; replaced the interim Gmail address (59 references, 12 pages + capability-statement generator). |
 | "LEAD CONSULTANT" on the home page | Not in the main page; place it under Robert Bwire at the bottom | The leadership block moved from mid-page (section 5 of 9) to the foot of the home page, after the FAQ and before the closing CTA. The "Lead Consultant" line in the portrait caption was removed, so it now appears exactly once, directly under his name. It remains in the photo `alt` text, which is not visible and is correct for screen readers. Section backgrounds rebalanced so the alternation still reads. |
 | "About Robert Bwire" | Rename to "OUR TEAM" | Footer link renamed on all 12 pages. Section eyebrow on the home page is now "Our team"; the About page breadcrumb reads "Our Team". The header nav item is still "About" — a generic label pointing at the same page. Change it if the client prefers. |
 | Weekly publishing | A place to post weekly updates | New `/updates/` page ("Weekly Brief"). One file, one paste per week, with the template and instructions inline. Linked from the header nav, footer, home page and `/insights/`. Procedure in `WEEKLY-UPDATES.md`. |

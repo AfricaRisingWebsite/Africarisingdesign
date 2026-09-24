@@ -243,7 +243,7 @@ def page_two(c, body, small, h2, card_head):
     label(c, "Start a conversation", 25 * mm, 41 * mm)
     c.setFillColor(WHITE)
     c.setFont("ManropeBold", 10)
-    c.drawString(25 * mm, 32 * mm, "africarisinginvestments@gmail.com")
+    c.drawString(25 * mm, 32 * mm, "info@africarisinginvestment.com")
     c.setFont("DMSans", 8)
     c.drawRightString(184 * mm, 32 * mm, "Nairobi, Kenya  ·  africarisinginvestment.com")
     footer(c, 2)
